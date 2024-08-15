@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="utf-8">
+    <title>Our past</title>  
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+</head> 
+
+<body>
+	<audio autoplay="autoplay" loop="loop" preload="auto" src="../song/橘子.flac"></audio>
+    <h2>A Letter For You</h2><br>
+    <div class="login">
+		<form action="wait.html"> 
+            <!-- <div class="L"><label><b>男主:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="man_name"/ maxlength="100" placeholder="请配对姓名"><br> </div -->
+			<!-- <div class="L"><label><b>生辰（男）:</b></label><input type="password" id="man_birth"/ maxlength="150" placeholder="请配对生日(4位数字)"><br></div> -->
+			<div class="L"><label><b>女主:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="woman_name"/ maxlength="100" placeholder="请配对姓名"><br> </div>
+			<div class="L"><label><b>生辰（女）:</b></label><input type="password" id="woman_birth"/ maxlength="150" placeholder="请配对生日(4位数字)"><br> </div>
+			<div class="C">
+				<h1>一辈子很短，如白驹过隙，转瞬即逝</h1>
+				<h1>可这种心情很长，如高山大川，延绵不绝</h1>
+				<span>欢迎来到我送你的"一封信"φ(≧ω≦*)♪</span>
+			</div>
+			<input type="submit" id="log" value="点击进行信件穿梭" onclick="return checkuser()"/> 
+		</form> 
+	</div>
+</body> 
+<script type="text/javascript"> 
+    function getValue(id) { 
+        return document.getElementById(id).value; 
+    } 
+    function checkuser() { 
+        if(getValue('woman_name') == "封雯茜" && getValue('woman_birth') == "0918") { 
+            return true; 
+        }else { 
+            alert("您输入的信息有误，请配对正确的信息，以便进入信中的世界！")
+            return false; 
+        } 
+    } 
+</script> 
+</html> 
